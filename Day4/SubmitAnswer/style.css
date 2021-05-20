@@ -1,0 +1,91 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+
+  /* 폰트를 'Pattaya'로 지정 */
+  font-family: 'Pattaya'!important;
+
+  display: grid;
+  justify-items: center;
+}
+
+.poster{
+  /* height : width = 1 : 1.77 */
+  width: 80vw;
+  height: 45vw;
+
+  display : grid;
+  grid-template-rows : 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  /* 포스터에 그림자 지정 */
+  box-shadow: 3px 2px 15px -3px black;
+}
+
+.poster > div{
+  /* 글자를 중앙에 정렬 */
+  display : grid;
+  justify-content: center;
+  align-content: center;
+
+  font-size : 6vw;
+  font-weight: 300;
+}
+
+.poster > div:last-child{
+  display : grid;
+  grid-template-rows : repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  font-size : 3vw;
+}
+
+
+.poster > div:last-child > div{
+  /* 글자를 중앙에 정렬 */
+  display : grid;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.color__white{
+  color : white;
+}
+
+.color__orange{
+  color : rgb(248,75,7);
+}
+
+.background__whitesmoke{
+  background : whitesmoke
+}
+
+.background__seagreen{
+  background : seagreen;
+}
+
+.background__orange{
+  background: rgb(248,75,7);
+}
+.background__lightpink{
+  background : lightpink;
+}
+
+.background__blueviolet{
+  background: blueviolet;
+}
+
+.background__gold{
+  background: gold;
+}
+
+.background__hotpink{
+  background : hotpink
+}
