@@ -1,0 +1,95 @@
+body{
+    width : 100vw;
+    height :100vh;
+    background-color : black;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 16px;
+}
+
+.grid{
+    background-color : white;
+
+    width : 80vw;
+    height : 80vh;
+
+    display : grid;
+    grid-template: 
+    "header header header header" 0.15fr
+    "changes purple speakers artists" 1fr
+    "about . speakers artists" 1fr
+    "about tickets speakers artists" 1fr/
+    1fr 1fr 1fr 1fr
+}
+
+.header{
+    background : gray;
+    grid-area : header;
+}
+
+.main{
+    padding : 5%;
+}
+
+.main--changes{
+    background : black;
+    COLOR : white;
+    grid-area : changes;
+    font-size : 20px;
+}
+
+/* 1. Changes 뒤집기 */
+.main--changes li:nth-child(1), .main--changes li:nth-child(3){
+    display : grid;
+    grid-template-columns: min-content min-content min-content min-content min-content min-content 4fr;
+}
+
+.main--changes .rotate{
+    transform: rotate(180deg);
+    align-content: flex-end;
+    padding-bottom: 0;
+}
+
+.main--changes ul li div{
+    padding-bottom : 1px;
+}
+/* 1. 끝 */
+
+.main--purple{
+    background : purple;
+    grid-area : purple;
+}
+
+.main--about{
+    background : red;
+    grid-area : about;
+    line-height: 120%;
+}
+.main--about li{
+    margin-bottom: 5px;
+}
+.main--tickets{
+    background : yellow;
+    grid-area : tickets;
+}
+
+.main--speakers{
+    grid-area : speakers;
+}
+
+.main--speakers li{
+    margin-bottom: 1px;
+}
+.main--artists{
+    grid-area : artists;
+}
+.main--artists li{
+    margin-bottom: 1px;
+}
+.main .subheading{
+    font-size : 5px;
+    margin-bottom : 10px;
+}
+
+
