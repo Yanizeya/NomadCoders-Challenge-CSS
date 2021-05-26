@@ -23,17 +23,19 @@ body {
 }
 
 .header {
-    
     background : white;
     border : 5px solid orangered;
+    color : orangered;
+    font-weight: 700;
+    font-size : 14px;
 }
 
 .header--top{
     grid-area : headerTop;
-    color : orangered;
     display : flex;
     justify-content: center;
     align-items: center;
+    font-size : 16px;
 }
 
 .header--left{
@@ -46,18 +48,63 @@ body {
     border-bottom: none;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    
+}
+
+.header--left__1{
+    width : 100%;
+    background-color: orangered;
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow : 2;
+}
+.header--left__2{
+    width : 100%;
+    border-bottom : 5px solid orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow:  2;
+
+}
+.header--left__3{
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .header--right{
     grid-area : headerRight;
-
     display : flex;
     flex-direction: row;
     align-items: center;
+    background: green;
+    color : white;
     border-top: none;
     border-bottom: none;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    
+}
+
+.header--right__1{
+    width : 100%;
+    border-bottom : 5px solid orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.header--right__2{
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .header--bottom{
@@ -65,6 +112,7 @@ body {
     display : grid;
     justify-content: center;
     align-items: center;
+    font-size : 16px;
 }
 
 .main{
@@ -73,6 +121,8 @@ body {
 }
 
 .main--content{
+    width : 100%;
+    height :100%;
     display : grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -85,6 +135,9 @@ body {
     background : blue;
 }
 .main--logo{
-    justify-self: center;
-    align-self: center;
+    width : min-content;
+    height : min-content;
+    position : absolute;
+    bottom : 50%;
+    right : 47%;
 }
