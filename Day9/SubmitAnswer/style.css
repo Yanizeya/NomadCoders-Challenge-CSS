@@ -27,7 +27,7 @@ body {
     border : 5px solid royalblue;
     color : darkslateblue;
     font-weight: 700;
-    font-size : 14px;
+    font-size : 10px;
 }
 
 .header--top{
@@ -35,7 +35,7 @@ body {
     display : flex;
     justify-content: center;
     align-items: center;
-    font-size : 16px;
+    font-size : 14px;
 }
 
 .header--left{
@@ -126,7 +126,7 @@ body {
     display : grid;
     justify-content: center;
     align-items: center;
-    font-size : 16px;
+    font-size : 14px;
 }
 
 .main{
