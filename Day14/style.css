@@ -131,11 +131,30 @@ main{
   padding-right : 40px;
   font-size : xx-small;
 }
-.main--box--image:nth-child(odd){
-
+.main--box--image{
+  display : grid;
+  grid-template: 
+  "img1 img2 img2" 1fr 
+  "img1 img2 img2" 1fr 
+  "img1 img3 img4" 1fr/
+  2fr 1fr 1fr;
 }
 
+.main--box--image img:nth-child(1){
+  grid-area : image1;
+}
 
+.main--box--image img:nth-child(2){
+  grid-area : image2;
+}
+
+.main--box--image img:nth-child(3){
+  grid-area : image3;
+}
+
+.main--box--image img:nth-child(4){
+  grid-area : image4;
+}
 
 
 
