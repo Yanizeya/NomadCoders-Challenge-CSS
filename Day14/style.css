@@ -148,13 +148,16 @@ main{
 .main--box--image div{
   border : 2px solid white;
 }
+
+.wide{
+  grid-column: span 2;
+}
 .bg-blue{
   background: #DFE9E8;
 }
 .bg-red{
   background:#E97879;
 }
-
 
 .bg-ibory{
   background: #E9DDC8;;
