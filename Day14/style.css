@@ -84,7 +84,6 @@ main{
   background-color: white;
   display : grid;
   grid-auto-rows: 1fr;
-  border : 2px solid black;
 }
 
 .main--box{
@@ -131,32 +130,55 @@ main{
   padding-right : 40px;
   font-size : xx-small;
 }
+
 .main--box--image{
   display : grid;
-  grid-template: 
-  "img1 img2 img2" 1fr 
-  "img1 img2 img2" 1fr 
-  "img1 img3 img4" 1fr/
-  2fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding : 10% 15%;
+  gap : 2px;
 }
 
-.main--box--image img:nth-child(1){
-  grid-row : 1/-1;
-  grid-area : image1;
+.main--box--image img{
+  width : 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.main--box--image img:nth-child(2){
-  grid-area : image2;
+.main--box--image div{
+  border : 2px solid white;
+}
+.bg-blue{
+  background: #DFE9E8;
+}
+.bg-red{
+  background:#E97879;
 }
 
-.main--box--image img:nth-child(3){
-  grid-area : image3;
+
+.bg-ibory{
+  background: #E9DDC8;;
 }
 
-.main--box--image img:nth-child(4){
-  grid-area : image4;
+.bg-darkgray{
+  background : darkgray;
+}
+.bg-gray{
+  background : gray;
 }
 
+.bg-black{
+  background : black;
+}
 
+.sh-white{
+  box-shadow: 0 0 20px 10px white inset;
+}
 
+.sh-black{
+  box-shadow: 0 0 40px 40px black inset;
+}
 
+.li-black{
+  border : 2px solid black;
+}
