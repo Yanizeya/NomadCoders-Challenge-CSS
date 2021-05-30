@@ -7,12 +7,76 @@ body {
 }
 
 header{
+  display: flex;
+  flex-direction: column;
   background : white;
   width: 400px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   border : 2px solid black;
 }
+
+.header__title{
+  height : 20%; 
+  display : flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding : 10px;
+  padding-bottom : 20px;
+  border-bottom: 2px solid black;
+  font-weight: 500;
+}
+
+.header__title > h6{
+  font-size : 16px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.header__title > h1{
+  font-size : 70px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-style: italic;
+  color :	#2C3E50;
+}
+.header__title > h2{
+  font-size : 25px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-style: italic;
+  color :	#2C3E50;
+}
+
+.header__table{
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.header__table > div{
+  display : flex;
+  justify-content: start;
+  padding : 5px;
+  padding-left: 15px;
+  border-bottom : 2px solid black;
+}
+
+.header__table > div:hover{
+  background-color: mediumaquamarine;
+}
+.header__bottom{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding : 10px;
+}
+.header__bottom p{
+  margin : 10px 0px;
+}
+.header__bottom h6{
+  font-weight: bold;
+  margin-bottom : 5px;
+}
+
 
 main{
   margin-left: 400px;
@@ -24,26 +88,53 @@ main{
 }
 
 .main--box{
-  padding : 5px;
+  display : grid;
+  grid-template-columns: 300px 1fr;
+  border-bottom: 2px solid black;
 }
 
-.main__field{
+.main--box--text{
+  border-right: 2px solid black;
+  padding : 10px;
+  padding-right: 40px;
+}
+.main--box--text__field{
   text-transform: uppercase;
-  font-size : 20px;
+  font-size : 16px;
   padding-bottom : 60px;
+  font-weight: 500;
 }
 
-.main__title{
+.main--box--text__title{
   text-transform: capitalize;
   font-size : 40px;
-  padding-bottom : 40px;
+  font-weight: 500;
+  padding-bottom : 30px;
+  font-style: oblique;
+  color : dimgray;
+}
+.main--box--text__title h2{
+  margin-top : 10px;
+  font-style:normal;
+  font-size : 15px;
+  font-weight: 700;
+  color : black;
+}
+.main--box--text__content {
+  line-height: 150%;
+}
+.english{
+  font-size : 14px;
+}
+.korean{
+  margin-top : 10px;
+  padding-right : 40px;
+  font-size : xx-small;
+}
+.main--box--image:nth-child(odd){
+
 }
 
-
-
-
-footer{
-}
 
 
 
