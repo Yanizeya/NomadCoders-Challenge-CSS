@@ -1,0 +1,51 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  background : white;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  border : 2px solid black;
+}
+
+main{
+  margin-left: 400px;
+  height: 400%;
+  background-color: white;
+  display : grid;
+  grid-auto-rows: 1fr;
+  border : 2px solid black;
+}
+
+.main--box{
+  padding : 5px;
+}
+
+.main__field{
+  text-transform: uppercase;
+  font-size : 20px;
+  padding-bottom : 60px;
+}
+
+.main__title{
+  text-transform: capitalize;
+  font-size : 40px;
+  padding-bottom : 40px;
+}
+
+
+
+
+footer{
+}
+
+
+
+
+
